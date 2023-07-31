@@ -1,6 +1,6 @@
 {
 	"name": "template-typescript-node-library",
-	"repository": "https://github.com/oskarlh/template-typescript-node-library.git",
+	"repository": "github:oskarlh/template-typescript-node-library",
 	"version": "1.0.0",
 	"main": "dist/index.js",
 	"type": "module",
