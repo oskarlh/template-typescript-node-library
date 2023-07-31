@@ -1,3 +1,0 @@
-services:
-  my-app:
-    build: .
