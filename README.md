@@ -1,2 +1,2 @@
-# template-typescript-node-service
+# template-typescript-node-library
 When developing, run `npm run watch`.
