@@ -33,5 +33,8 @@
 		"lint": "eslint .",
 		"test": "jest",
 		"test-with-typechecking": "jest --config=jest.config.with-typechecking.js"
-	}
+	},
+	"files": [
+		"dist"
+	]
 }
