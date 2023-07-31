@@ -1,0 +1,6 @@
+{
+  "watch": ["./src/"],
+  "exec": "npm run build-without-typechecking && npm run start-debug",
+  "ignore": ["./node_packages/", "*.test.ts"],
+  "ext": "json,ts"
+}

@@ -1,0 +1,37 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"internalConsoleOptions": "openOnSessionStart",
+			"name": "Watch, build (without typechecking) & run",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js"],
+			"request": "launch",
+			"restart": true,
+  			"runtimeArgs": ["run", "watch"],
+       		"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**", "node_modules/**"],
+			"type": "node",
+		},
+		{
+			"internalConsoleOptions": "openOnSessionStart",
+			"name": "Build (with typechecking) & run",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js"],
+			"preLaunchTask": "npm: build",
+			"request": "launch",
+  			"runtimeArgs": ["run", "start-debug"],
+       		"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**", "node_modules/**"],
+			"type": "node"
+		},
+		{
+			"internalConsoleOptions": "openOnSessionStart",
+			"name": "Build (with typechecking)",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js"],
+			"request": "launch",
+  			"runtimeArgs": ["run", "build"],
+       		"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**", "node_modules/**"],
+			"type": "node"
+		}
+	]
+}
