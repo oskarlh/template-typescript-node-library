@@ -5,8 +5,8 @@
 		"url": "git+https://github.com/oskarlh/template-typescript-node-library.git"
 	},
 	"version": "1.0.0",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"exports": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"type": "module",
 	"author": "Oskar Larsson Högfeldt <oskar@oskar.pm>",
 	"contributors": [
@@ -35,13 +35,13 @@
 	},
 	"scripts": {
 		"build": "tsc",
-		"build-and-verify": "npm run test-with-typechecking --ci && npm run lint && npm run build",
-		"build-without-typechecking": "swc -C exclude=.test.ts -d dist -s true -- src",
 		"lint": "eslint .",
 		"lint-fix": "eslint . --fix",
 		"prepack": "npm run build",
 		"test": "jest",
-		"test-with-typechecking": "jest --config=jest.config.with-typechecking.js"
+		"test-with-typechecking": "jest --config=jest.config.with-typechecking.js",
+		"typecheck": "tsc --noEmit",
+		"verify": "npm run test-with-typechecking --ci && npm run lint && npm run typecheck"
 	},
 	"files": [
 		"dist"
