@@ -1,9 +1,9 @@
 name: Bump package version
-
+on: workflow_dispatch
 jobs:
   bump:
     name: Bump package version
     runs-on: ubuntu-latest
     steps:
     - name: ⏫ Bumping version
-      uses: jpb06/bump-package@v2
+      uses: jpb06/bump-package@v2.5.15
