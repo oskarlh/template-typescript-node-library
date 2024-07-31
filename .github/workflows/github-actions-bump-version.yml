@@ -1,0 +1,9 @@
+name: Bump package version
+
+jobs:
+  bump:
+    name: Bump package version
+    runs-on: ubuntu-latest
+    steps:
+    - name: ⏫ Bumping version
+      uses: jpb06/bump-package@v2
